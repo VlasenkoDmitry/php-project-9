@@ -10,6 +10,5 @@ $app->addErrorMiddleware(true, true, true);
 $app->get('/', function ($request, $response) {
     $response->getBody()->write('Welcome to Slim!');
     return $response;
-
 });
 $app->run();
